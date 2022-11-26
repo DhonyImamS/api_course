@@ -1,0 +1,55 @@
+// Javascript itu kan Functional Programming,. artinya didalam fungsi bisa dimasukin fungsi
+
+function cetakNilai(input) {
+    console.log("cetak Nilai ini berapa " + input);
+}
+
+function sum(bilangan1, bilangan2, masukinFungsiDong) {
+    const result = bilangan1 + bilangan2;
+    console.log(result);
+    masukinFungsiDong(result);
+}
+
+
+sum(2, 8, cetakNilai);
+
+
+
+const objectJiwa = {
+    cetakNilai(input)
+}
+
+function ObjectDisplay(input){
+    return objectJiwa.namaku(input) // chaining
+}
+
+
+async() => {}
+
+
+function sum2(bilangan1, bilangan2) {
+    const result = bilangan1 + bilangan2;
+    return result;
+}
+
+const variablefungsi = sum2(bilangan1, bilangan2);
+
+const variablefungsi2 = sum2(bilangan1, bilangan2) => { 
+    const result = bilangan1 + bilangan2;
+    return Promise.resolve(result);
+};
+
+const variablefungsi3 = sum3(bilangan1, bilangan2) => bilangan1 + bilangan2;
+
+
+OBJECT DESTRUCTURING => ILMU COCOKOLOGI
+
+const chai = {
+    nama: 'dhony',
+    usia: 16
+};
+
+const namaUser = objA.nama; //Dhony
+
+const { nama } = objA; //Dhony
+
